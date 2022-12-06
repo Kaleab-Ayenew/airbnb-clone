@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  box-shadow: 0 0 10px black;
+}
+
+.photos-container{
+  font-family: 'DM Sans', sans-serif;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 15px;
+
+}
+
+.photos-container > .image-container{
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  color: white;
+}
+
+.photos-container > .image-container > img{
+  border-radius: 15px;
+  height: 300px;
+}
+
+.photos-container > .image-container > h3{
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  max-width: 200px;
+  font-size: 20px;
+}
+
+.photos-container > .image-container > small{
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.photos-container > .image-container > button{
+  font-weight: 600;
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  width: 80px;
+  height: 35px;
+  border-radius: 9px;
+  border: 0;
+}
+
+.photos-container > .image-container > button:hover{
+  background-color: azure;
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+}
+
+.cards-container > h1{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+.cards-container  .image-container{
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  color: black;
+}
+
+.cards-container  .image-container > img{
+  border-radius: 15px;
+  height: 200px;
+}
+
+
+.card-photos-container{
+  display: flex;
+  justify-content: space-between;
+}
+
