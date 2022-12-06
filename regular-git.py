@@ -1,7 +1,7 @@
 import os
 import time
 
-sleep_time = 60 * 10
+sleep_time = 60 * 1
 
 
 
