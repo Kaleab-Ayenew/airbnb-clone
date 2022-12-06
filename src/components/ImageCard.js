@@ -1,10 +1,11 @@
 import React from "react"
 
 
-export default function ImageCard(props){
+export default function ImageCard(properties){
+    let props = properties.props
     return(
         <div className="image-container">
-                        {props.openSpot == 0 && 
+                        {props.openSpot === 0 && 
                         <div className="card-badge">Sold Out</div>
                         }
                         

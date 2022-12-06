@@ -6,13 +6,9 @@ function Cards(){
 
     const cards = cardData.map((item)=>{
         return(
-        <ImageCard 
-        openSpot ={item.openSpot}
-        imgSrc={item.imgSrc}
-        rating={item.rating} 
-        country={item.country} 
-        description={item.description} 
-        price={item.price}/>)
+        <ImageCard
+        props={item}
+        />)
     });
 
     console.log(cards)
