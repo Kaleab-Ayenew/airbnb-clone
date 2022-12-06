@@ -7,7 +7,7 @@ function Cards(){
     const cards = cardData.map((item)=>{
         return(
         <ImageCard
-        props={item}
+        {...item}
         />)
     });
 
