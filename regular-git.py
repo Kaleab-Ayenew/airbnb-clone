@@ -4,8 +4,11 @@ import sys
 
 sleep_time = 60 * 1
 
-
-PATH = sys.argv[1] #You should enter the path to the repo here
+try:
+    PATH = sys.argv[1] #You should enter the path to the repo here
+except IndexError:
+    print("Please provide the path to your repo")
+    exit()
 
 
 def git_all(comment, repo_path):
