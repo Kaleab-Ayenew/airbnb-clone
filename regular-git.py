@@ -1,10 +1,11 @@
 import os
 import time
+import sys
 
 sleep_time = 60 * 1
 
 
-PATH = r"C:\Users\COM-SORC\Documents\0all\projects\react-projects\airbnb-clone" #You should enter the path to the repo here
+PATH = sys.argv[1] #You should enter the path to the repo here
 
 
 def git_all(comment, repo_path):
