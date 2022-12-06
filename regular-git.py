@@ -4,19 +4,17 @@ import time
 sleep_time = 60 * 1
 
 
+PATH = r"C:\Users\COM-SORC\Documents\0all\projects\react-projects\airbnb-clone" #You should enter the path to the repo here
 
 
-
-def git_all(comment):
-    print("This is the git comment: ", comment)
+def git_all(comment, repo_path):
+    
     cmd_add = "git add ."
     cmd_commit = f"git commit -m \"{comment}\""
     print("This is the git cmd", cmd_commit)
     cmd_push = "git push -u origin main"
-
-    os.system(cmd_add)
-    os.system(cmd_commit)
-    os.system(cmd_push)
+    final_cmd = f"cd {repo_path} && {cmd_add} && {cmd_push} && {cmd_commit}"
+    os.system(final_cmd)
 
 def write_log(text):
     with open("./regular-git-log", "r") as log_file:
@@ -44,7 +42,7 @@ def git_deamon(sleep_time):
 
         comment = write_log("regular commit")
         comment = comment.strip("\n")
-        git_all(comment)
+        git_all(comment, PATH)
         time.sleep(sleep_time)
 
 def git_n(m):
@@ -52,11 +50,11 @@ def git_n(m):
     for i in range(m):
         comment = write_log("regular commit")
         comment = comment.strip("\n")
-        git_all(comment)
+        git_all(comment, PATH)
 
 def git_one():
     comment = write_log("regular commit")
     comment = comment.strip("\n")
-    git_all(comment)
+    git_all(comment, PATH)
 
 git_deamon(sleep_time)
